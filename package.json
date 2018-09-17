@@ -1,0 +1,33 @@
+{
+  "name": "wibase-js",
+  "version": "1.0.0",
+  "description": "A backend as service application, that managers project, using the database tha5 user configs",
+  "private": true,
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+  },
+  "main": "",
+  "keywords": [
+    "Wibase",
+    "TypeScript",
+    "Baas"
+  ],
+  "author": "Talisson Junior",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-loader": "^5.0.0",
+    "typescript": "^3.0.3",
+    "typings": "^2.1.1",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-merge": "^4.1.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+  }
+}
