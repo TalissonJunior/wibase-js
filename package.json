@@ -7,6 +7,9 @@
     "test": "tests"
   },
   "scripts": {
+    "serve": "node node_modules/webpack/bin/webpack.js --config buildtools/webpack.dev.js --watch",
+    "build-dev": "node node_modules/webpack/bin/webpack.js --config buildtools/webpack.dev.js",
+    "build": "node node_modules/webpack/bin/webpack.js --config buildtools/webpack.prod.js"
   },
   "main": "",
   "keywords": [
@@ -19,7 +22,6 @@
   "devDependencies": {
     "ts-loader": "^5.0.0",
     "typescript": "^3.0.3",
-    "typings": "^2.1.1",
     "webpack": "^4.17.2",
     "webpack-cli": "^3.1.0",
     "webpack-merge": "^4.1.4"
@@ -28,6 +30,5 @@
     "type": "git",
     "url": ""
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
