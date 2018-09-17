@@ -1,7 +1,7 @@
 {
   "name": "wibase-js",
   "version": "1.0.0",
-  "description": "A backend as service application, that managers project, using the database tha5 user configs",
+  "description": "This is the wibase core frontend javascript, that allows you to manipulate your data.",
   "private": true,
   "directories": {
     "test": "tests"
