@@ -3,13 +3,13 @@
         "module": "commonjs",
         "target": "es5",
         "outDir": ".tmp",
-        "lib": [
-            "dom",
-            "es2015"
-        ],
         "removeComments": true,
         "noImplicitAny": true,
         "sourceMap": true,
+        "lib": [
+            "dom",
+            "es2015"
+        ]
     },
     "exclude": [
         "dist",

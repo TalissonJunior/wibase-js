@@ -11,12 +11,10 @@ class App {
             throw new Error("config/wibase - 'projectId' property is missing");
         }
 
+        // Save the user configuration
         new StorageService().setConfiguration(config);
     }
 
-    public Get() {
-        console.log(new StorageService().getConfiguration());
-    }
 
 }
 

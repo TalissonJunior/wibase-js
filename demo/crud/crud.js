@@ -3,4 +3,4 @@ var Wibase = new Wibase.initializeApp({
     projectId: 'ticketin-Zazsde1221-asda4racz#!x5674'
   });
 
-  console.log(Wibase)
+  console.log(Wibase);
