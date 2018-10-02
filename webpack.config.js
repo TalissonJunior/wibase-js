@@ -1,30 +1,25 @@
+const TSLintPlugin = require('tslint-webpack-plugin');
+
 module.exports = {
-    entry: [
-        './src/wibase.ts',
-    ],
-    node: {
-        __dirname: false
-    },
-    externals: [
-        /^[a-z\-0-9]+$/ // Ignore node_modules folder
-    ],
-    resolve: {
-        extensions: ['.ts', '.js'],
-        modules: [
-            './node_modules',
-            'node_modules'
-        ]
-    },
+    entry: './src/app.ts',
     module: {
         rules: [
             {
-                test: /\.ts$/,
-                use: [
-                    {
-                        loader: 'ts-loader',
-                    }
-                ]
+                test: /\.tsx?$/,
+                use: 'ts-loader'
             }
         ]
+    },
+    resolve: {
+        extensions: ['.tsx', '.ts', '.js']
+    },
+    plugins: [
+        new TSLintPlugin({
+            files: ['./src/**/*.ts']
+        })
+    ],
+    output: {
+        library: 'Wibase',
+        libraryTarget: 'var'
     }
 };

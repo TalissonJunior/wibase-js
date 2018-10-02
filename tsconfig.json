@@ -3,20 +3,16 @@
         "module": "commonjs",
         "target": "es5",
         "outDir": ".tmp",
+        "lib": [
+            "dom",
+            "es2015"
+        ],
+        "removeComments": true,
+        "noImplicitAny": true,
         "sourceMap": true,
-        "experimentalDecorators": true,
-        "emitDecoratorMetadata": true
     },
     "exclude": [
-        "node_modules",
         "dist",
-        ".tmp",
-        "release"
-    ],
-    "types": [
-        "node"
-    ],
-    "typeRoots": [
-        "./src/typings.d.ts"
+        ".tmp"
     ]
 }
