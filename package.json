@@ -35,5 +35,7 @@
     "type": "git",
     "url": ""
   },
-  "dependencies": {}
+  "dependencies": {
+    "rxjs": "^6.3.3"
+  }
 }
