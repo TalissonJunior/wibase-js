@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <!--/ Bootstrap -->
+
+  <!-- ionicons -->
+  <link rel="stylesheet" href="../../node_modules/ionicons/dist/css/ionicons.min.css">
+  <!--/ ionicons -->
+
+  <title>Wibase - Todo App</title>
+</head>
+
+<body class="bg-light">
+
+  <main role="main" class="container">
+    <div class="jumbotron shadow-sm mt-sm-5">
+      <h1 class="display-4">Wibase - Todo App</h1>
+      <p class="lead">This is a simple demo that handles a CRUD using wibasejs.</p>
+      <hr class="my-4">
+
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Title..." aria-label="Recipient's username"
+          aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn  btn-primary" type="button">ADD</button>
+        </div>
+      </div>
+
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-secondary list-group-item-action d-flex justify-content-between align-items-center">
+            <del>Cras justo odio</del>
+            <i class="icon ion-md-close"></i>
+        </li>
+        <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+          Dapibus ac facilisis in
+            <i class="icon ion-md-close"></i>
+        </li>
+        <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+          Morbi leo risus
+            <i class="icon ion-md-close"></i>
+        </li>
+      </ul>
+    </div>
+
+  </main>
+
+  <!-- Bootstrap core JavaScript ================================================== -->
+  <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <!-- Wibasejs ================================================== -->
+  <script src="../../.tmp/wibase.js"></script>
+  <script src="./crud.js"></script>
+
+</body>
+
+</html>
