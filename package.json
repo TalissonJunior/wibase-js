@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "serve": "node node_modules/webpack/bin/webpack.js --config buildtools/webpack.dev.js --watch",
+    "serve": "node node_modules/webpack/bin/webpack.js --config buildtools/webpack.dev.js && node node_modules/webpack-dev-server/bin/webpack-dev-server.js --mode development",
     "build-dev": "node node_modules/webpack/bin/webpack.js --config buildtools/webpack.dev.js",
     "build": "node node_modules/webpack/bin/webpack.js --config buildtools/webpack.prod.js"
   },
@@ -29,6 +29,7 @@
     "typescript": "^3.1.1",
     "webpack": "^4.17.2",
     "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.9",
     "webpack-merge": "^4.1.4"
   },
   "repository": {
