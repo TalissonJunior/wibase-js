@@ -12,8 +12,14 @@ storage.ref('user').on('value', (snapshot) => {
 
 
 function addItem() {
+  
   storage.ref('user').push({
     name: 'teste',
     age: 25
+  }).then((snapshot) => {
+    console.log(snapshot);
+  })
+  .catch((error) => {
+      console.log(error);
   });
 }

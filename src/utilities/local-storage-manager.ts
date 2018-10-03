@@ -1,4 +1,4 @@
-import { settings } from "../settings";
+import { environment } from "../environment/environment";
 
 /**
  * @description This class will use the same object and store it on
@@ -10,7 +10,7 @@ export class LocalStorageManager {
 
     public static add(name: string, item: any) {
 
-        var data:any = localStorage.getItem(settings.keys.storage);
+        var data:any = localStorage.getItem(environment.keys.storage);
 
         if (data) {
             data = JSON.parse(data);
@@ -21,12 +21,12 @@ export class LocalStorageManager {
             data[name] = item;
         }
 
-        localStorage.setItem(settings.keys.storage, JSON.stringify(data));
+        localStorage.setItem(environment.keys.storage, JSON.stringify(data));
     }
 
     public static get(name: string) {
 
-        var data:any = localStorage.getItem(settings.keys.storage);
+        var data:any = localStorage.getItem(environment.keys.storage);
 
         if (data) {
             return JSON.parse(data)[name];
@@ -36,13 +36,13 @@ export class LocalStorageManager {
     }
 
     public static remove(name: string) {
-        var data:any = localStorage.getItem(settings.keys.storage);
+        var data:any = localStorage.getItem(environment.keys.storage);
 
         if (data) {
             data = JSON.parse(data);
             delete data[name];
 
-            localStorage.setItem(settings.keys.storage, JSON.stringify(data));
+            localStorage.setItem(environment.keys.storage, JSON.stringify(data));
         }
     }
 

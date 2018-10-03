@@ -1,7 +1,7 @@
 import { IConfiguration } from "./interfaces/IConfiguration";
 import { Storage } from "./modules";
 import { LocalStorageManager } from "./utilities/local-storage-manager";
-import { settings } from "./settings";
+import { environment } from "./environment/environment";
 
 class App {
 
@@ -15,7 +15,7 @@ class App {
         }
 
         // Save the user configuration
-        LocalStorageManager.add(settings.keys.configuration, config);
+        LocalStorageManager.add(environment.keys.configuration, config);
     }
 
     public storage() {
